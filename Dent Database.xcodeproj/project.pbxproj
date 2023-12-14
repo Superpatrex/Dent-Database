@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D84DC88B2B2BDDEE00D329E2 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DC88A2B2BDDEE00D329E2 /* General.swift */; };
+		D84DC88D2B2BDE0700D329E2 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DC88C2B2BDE0700D329E2 /* Contacts.swift */; };
+		D84DC88F2B2BDFB400D329E2 /* Invoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DC88E2B2BDFB400D329E2 /* Invoices.swift */; };
+		D84DC8912B2BEC0000D329E2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DC8902B2BEC0000D329E2 /* Settings.swift */; };
+		D8FD47E72B2B88230044FBAA /* Dent_DatabaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD47E62B2B88230044FBAA /* Dent_DatabaseApp.swift */; };
+		D8FD47E92B2B88230044FBAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD47E82B2B88230044FBAA /* ContentView.swift */; };
+		D8FD47EB2B2B88240044FBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FD47EA2B2B88240044FBAA /* Assets.xcassets */; };
+		D8FD47EE2B2B88240044FBAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FD47ED2B2B88240044FBAA /* Preview Assets.xcassets */; };
+		D8FD47F82B2B88240044FBAA /* Dent_DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD47F72B2B88240044FBAA /* Dent_DatabaseTests.swift */; };
+		D8FD48022B2B88240044FBAA /* Dent_DatabaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD48012B2B88240044FBAA /* Dent_DatabaseUITests.swift */; };
+		D8FD48042B2B88240044FBAA /* Dent_DatabaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD48032B2B88240044FBAA /* Dent_DatabaseUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8FD47F42B2B88240044FBAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8FD47DB2B2B88230044FBAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8FD47E22B2B88230044FBAA;
+			remoteInfo = "Dent Database";
+		};
+		D8FD47FE2B2B88240044FBAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8FD47DB2B2B88230044FBAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8FD47E22B2B88230044FBAA;
+			remoteInfo = "Dent Database";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D84DC88A2B2BDDEE00D329E2 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		D84DC88C2B2BDE0700D329E2 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		D84DC88E2B2BDFB400D329E2 /* Invoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoices.swift; sourceTree = "<group>"; };
+		D84DC8902B2BEC0000D329E2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D8FD47E32B2B88230044FBAA /* Dent Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dent Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FD47E62B2B88230044FBAA /* Dent_DatabaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dent_DatabaseApp.swift; sourceTree = "<group>"; };
+		D8FD47E82B2B88230044FBAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D8FD47EA2B2B88240044FBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8FD47ED2B2B88240044FBAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8FD47F32B2B88240044FBAA /* Dent DatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dent DatabaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FD47F72B2B88240044FBAA /* Dent_DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dent_DatabaseTests.swift; sourceTree = "<group>"; };
+		D8FD47FD2B2B88240044FBAA /* Dent DatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dent DatabaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FD48012B2B88240044FBAA /* Dent_DatabaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dent_DatabaseUITests.swift; sourceTree = "<group>"; };
+		D8FD48032B2B88240044FBAA /* Dent_DatabaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dent_DatabaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8FD47E02B2B88230044FBAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8FD47F02B2B88240044FBAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8FD47FA2B2B88240044FBAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8FD47DA2B2B88230044FBAA = {
+			isa = PBXGroup;
+			children = (
+				D8FD47E52B2B88230044FBAA /* Dent Database */,
+				D8FD47F62B2B88240044FBAA /* Dent DatabaseTests */,
+				D8FD48002B2B88240044FBAA /* Dent DatabaseUITests */,
+				D8FD47E42B2B88230044FBAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8FD47E42B2B88230044FBAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD47E32B2B88230044FBAA /* Dent Database.app */,
+				D8FD47F32B2B88240044FBAA /* Dent DatabaseTests.xctest */,
+				D8FD47FD2B2B88240044FBAA /* Dent DatabaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8FD47E52B2B88230044FBAA /* Dent Database */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD47E62B2B88230044FBAA /* Dent_DatabaseApp.swift */,
+				D8FD47E82B2B88230044FBAA /* ContentView.swift */,
+				D84DC88C2B2BDE0700D329E2 /* Contacts.swift */,
+				D84DC88E2B2BDFB400D329E2 /* Invoices.swift */,
+				D84DC8902B2BEC0000D329E2 /* Settings.swift */,
+				D84DC88A2B2BDDEE00D329E2 /* General.swift */,
+				D8FD47EA2B2B88240044FBAA /* Assets.xcassets */,
+				D8FD47EC2B2B88240044FBAA /* Preview Content */,
+			);
+			path = "Dent Database";
+			sourceTree = "<group>";
+		};
+		D8FD47EC2B2B88240044FBAA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD47ED2B2B88240044FBAA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8FD47F62B2B88240044FBAA /* Dent DatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD47F72B2B88240044FBAA /* Dent_DatabaseTests.swift */,
+			);
+			path = "Dent DatabaseTests";
+			sourceTree = "<group>";
+		};
+		D8FD48002B2B88240044FBAA /* Dent DatabaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD48012B2B88240044FBAA /* Dent_DatabaseUITests.swift */,
+				D8FD48032B2B88240044FBAA /* Dent_DatabaseUITestsLaunchTests.swift */,
+			);
+			path = "Dent DatabaseUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8FD47E22B2B88230044FBAA /* Dent Database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8FD48072B2B88240044FBAA /* Build configuration list for PBXNativeTarget "Dent Database" */;
+			buildPhases = (
+				D8FD47DF2B2B88230044FBAA /* Sources */,
+				D8FD47E02B2B88230044FBAA /* Frameworks */,
+				D8FD47E12B2B88230044FBAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dent Database";
+			productName = "Dent Database";
+			productReference = D8FD47E32B2B88230044FBAA /* Dent Database.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8FD47F22B2B88240044FBAA /* Dent DatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8FD480A2B2B88240044FBAA /* Build configuration list for PBXNativeTarget "Dent DatabaseTests" */;
+			buildPhases = (
+				D8FD47EF2B2B88240044FBAA /* Sources */,
+				D8FD47F02B2B88240044FBAA /* Frameworks */,
+				D8FD47F12B2B88240044FBAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8FD47F52B2B88240044FBAA /* PBXTargetDependency */,
+			);
+			name = "Dent DatabaseTests";
+			productName = "Dent DatabaseTests";
+			productReference = D8FD47F32B2B88240044FBAA /* Dent DatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8FD47FC2B2B88240044FBAA /* Dent DatabaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8FD480D2B2B88240044FBAA /* Build configuration list for PBXNativeTarget "Dent DatabaseUITests" */;
+			buildPhases = (
+				D8FD47F92B2B88240044FBAA /* Sources */,
+				D8FD47FA2B2B88240044FBAA /* Frameworks */,
+				D8FD47FB2B2B88240044FBAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8FD47FF2B2B88240044FBAA /* PBXTargetDependency */,
+			);
+			name = "Dent DatabaseUITests";
+			productName = "Dent DatabaseUITests";
+			productReference = D8FD47FD2B2B88240044FBAA /* Dent DatabaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8FD47DB2B2B88230044FBAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					D8FD47E22B2B88230044FBAA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					D8FD47F22B2B88240044FBAA = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D8FD47E22B2B88230044FBAA;
+					};
+					D8FD47FC2B2B88240044FBAA = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D8FD47E22B2B88230044FBAA;
+					};
+				};
+			};
+			buildConfigurationList = D8FD47DE2B2B88230044FBAA /* Build configuration list for PBXProject "Dent Database" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8FD47DA2B2B88230044FBAA;
+			productRefGroup = D8FD47E42B2B88230044FBAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8FD47E22B2B88230044FBAA /* Dent Database */,
+				D8FD47F22B2B88240044FBAA /* Dent DatabaseTests */,
+				D8FD47FC2B2B88240044FBAA /* Dent DatabaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8FD47E12B2B88230044FBAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FD47EE2B2B88240044FBAA /* Preview Assets.xcassets in Resources */,
+				D8FD47EB2B2B88240044FBAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8FD47F12B2B88240044FBAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8FD47FB2B2B88240044FBAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8FD47DF2B2B88230044FBAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84DC8912B2BEC0000D329E2 /* Settings.swift in Sources */,
+				D84DC88D2B2BDE0700D329E2 /* Contacts.swift in Sources */,
+				D84DC88B2B2BDDEE00D329E2 /* General.swift in Sources */,
+				D84DC88F2B2BDFB400D329E2 /* Invoices.swift in Sources */,
+				D8FD47E92B2B88230044FBAA /* ContentView.swift in Sources */,
+				D8FD47E72B2B88230044FBAA /* Dent_DatabaseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8FD47EF2B2B88240044FBAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FD47F82B2B88240044FBAA /* Dent_DatabaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8FD47F92B2B88240044FBAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FD48042B2B88240044FBAA /* Dent_DatabaseUITestsLaunchTests.swift in Sources */,
+				D8FD48022B2B88240044FBAA /* Dent_DatabaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8FD47F52B2B88240044FBAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8FD47E22B2B88230044FBAA /* Dent Database */;
+			targetProxy = D8FD47F42B2B88240044FBAA /* PBXContainerItemProxy */;
+		};
+		D8FD47FF2B2B88240044FBAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8FD47E22B2B88230044FBAA /* Dent Database */;
+			targetProxy = D8FD47FE2B2B88240044FBAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D8FD48052B2B88240044FBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8FD48062B2B88240044FBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8FD48082B2B88240044FBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dent Database/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dent-Database.Dent-Database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8FD48092B2B88240044FBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dent Database/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dent-Database.Dent-Database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8FD480B2B2B88240044FBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dent-Database.Dent-DatabaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dent Database.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dent Database";
+			};
+			name = Debug;
+		};
+		D8FD480C2B2B88240044FBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dent-Database.Dent-DatabaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dent Database.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dent Database";
+			};
+			name = Release;
+		};
+		D8FD480E2B2B88240044FBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dent-Database.Dent-DatabaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dent Database";
+			};
+			name = Debug;
+		};
+		D8FD480F2B2B88240044FBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dent-Database.Dent-DatabaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dent Database";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8FD47DE2B2B88230044FBAA /* Build configuration list for PBXProject "Dent Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8FD48052B2B88240044FBAA /* Debug */,
+				D8FD48062B2B88240044FBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8FD48072B2B88240044FBAA /* Build configuration list for PBXNativeTarget "Dent Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8FD48082B2B88240044FBAA /* Debug */,
+				D8FD48092B2B88240044FBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8FD480A2B2B88240044FBAA /* Build configuration list for PBXNativeTarget "Dent DatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8FD480B2B2B88240044FBAA /* Debug */,
+				D8FD480C2B2B88240044FBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8FD480D2B2B88240044FBAA /* Build configuration list for PBXNativeTarget "Dent DatabaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8FD480E2B2B88240044FBAA /* Debug */,
+				D8FD480F2B2B88240044FBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8FD47DB2B2B88230044FBAA /* Project object */;
+}
