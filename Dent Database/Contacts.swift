@@ -5,139 +5,105 @@
 //  Created by Jack Andrews on 12/14/23.
 //
 
-import Foundation
 import SwiftUI
 
-struct Contacts: View
-{
+struct Contacts: View {
     @State private var addContactViewActive: Bool = false
-    
-    var body: some View
-    {
-        VStack
-        {
-            HStack
-            {
-                Text("Contacts")
-                    .bold()
-                    .padding()
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                
-            }
-            
-            ScrollView
-            {
-                VStack
-                {
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
-                    Contact(firstName: "Jack", lastName: "Andrews")
-                    Contact(firstName: "Alysha", lastName: "Irvin")
-                    Contact(firstName: "Albert")
+
+    @State var contactList: [Contact] = [
+        Contact(firstName: "Jack", lastName: "Andrews"),
+        Contact(firstName: "Alysha", lastName: "Irvin"),
+        Contact(firstName: "Albert", lastName: "Paetzig")
+    ]
+
+    var sortedContactList: [Contact] {
+        return contactList.sorted {
+            $0.lastName < $1.lastName
+        }
+    }
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                HStack {
+                    Text("Contacts")
+                        .bold()
+                        .padding()
+                        .font(.title)
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: ViewAddContact(contactList: $contactList))
+                    {
+                        Image(systemName: "plus")
+                            .font(.title)
+                            .foregroundColor(.blue)
+                            .padding(10)
+                    }
                 }
+
+                ScrollView {
+                    ForEach(sortedContactList)
+                    {
+                        person in
+                        NavigationLink(destination: ViewContact(contact: person))
+                        {
+                            IndividualContact(individualContact: person)
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .edgesIgnoringSafeArea(.all)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .edgesIgnoringSafeArea(.all)
         }
     }
 }
 
-struct AnotherView: View {
+struct ViewContact: View {
+    var contact: Contact
+
     var body: some View {
-        Text("This is another view!")
-            .navigationTitle("Another View")
+        Text(contact.firstName + " " + contact.lastName)
     }
 }
 
-struct AddContact:View {
-    var body: some View {
-        Text("Hello")
-    }
-}
-
-struct Contact:View
+struct ViewAddContact: View
 {
-    var firstName:String = ""
-    var lastName:String = ""
+    @Binding var contactList: [Contact]
     
     var body: some View
     {
-        Text(firstName + " " + lastName)
+        Button(action: {
+            // Add a new contact
+            self.addNewContact()
+            print(contactList.count)
+        }) {
+            Text("Add New Contact")
+        }
+    }
+    
+    func addNewContact()
+    {
+        contactList.append(Contact(firstName: "New", lastName: "Contact"))
+    }
+}
+
+struct Contact: Identifiable {
+    var id = UUID()
+    var firstName: String = ""
+    var lastName: String = ""
+}
+
+struct IndividualContact: View
+{
+    var individualContact: Contact
+    
+    var body: some View
+    {
+        Text("\(individualContact.firstName) \(individualContact.lastName)")
             .bold()
-        Divider()
+            .foregroundColor(.black)
+            .padding(3)
     }
 }
 
